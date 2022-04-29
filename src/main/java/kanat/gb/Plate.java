@@ -17,14 +17,10 @@ public class Plate {
             satiety = "Cat is full";
             System.out.println("Satiety: " + satiety);
         }else{
-            System.out.println("-----------------------");
-            System.out.println("Not enough food in plate! " + this.food + " food");
-            System.out.println("Now we will add food");
             addFood();
-            System.out.println("Amount of food now: " + this.food);
             this.food -= eaten;
-            System.out.println("Amount of food now: " + this.food);
-            System.out.println("-----------------------");
+            satiety = "Cat is full";
+            System.out.println("Satiety: " + satiety);
         }
     }
     public void addFood(){
